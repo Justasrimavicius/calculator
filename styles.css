@@ -1,0 +1,81 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+}
+#mainBox{
+    height: 600px;
+    width: 600px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+#viewWindow{
+    box-sizing: border-box;
+    border-style: solid;
+    width: 100%;
+    background-color: rgb(150, 210, 210);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+
+    font-size: 30px;
+}
+.answerField{
+    display: flex;
+    justify-content: space-between;
+}
+.inputField{
+    display: flex;
+    justify-content: space-between;
+}
+.equalView{
+    display: flex;
+    justify-content: right;
+}
+
+#calculationWindow{
+    width: 100%;
+    background-color: blue;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#numberBox{
+    background-color: rgb(0, 255, 255);
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: row;
+    flex-wrap: wrap;
+}
+.action,
+.operation{
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: 0px;
+    border-color: black;
+    
+    width: 150px;
+    height: 112.5px;
+    background-color: gray;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.operation{
+    background-color: rgb(110,110,100);
+}
+#operatorBox{
+
+    width: 100%;
+    background-color: rgb(0, 230, 255);
+    height: 450px;
+    width: 150px;
+}
