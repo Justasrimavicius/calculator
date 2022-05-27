@@ -39,17 +39,8 @@ operationBoxes.forEach(element=>{
                 y++;
             }
             console.log(operatorArray);
-
-
     });
 });
-
-
-function PushToInput(inputNum,operation){
-
-
-}
-
 
 equal.addEventListener('click',function(){
 function operate(a,b,operatorKey){
@@ -58,7 +49,6 @@ function operate(a,b,operatorKey){
     if(operatorKey=='*')return parseFloat(a)*parseFloat(b);
     if(operatorKey=='/')return parseFloat(a)/parseFloat(b);
 }
-    let index;
     let answer=0;
     let temp=0;
     let z=0;
@@ -82,8 +72,17 @@ inputArray.forEach(element => {
     console.log(temp);
     console.log('');
 });
-
-
-
+});
+const erase=document.querySelector('.erase');
+erase.addEventListener('click',function(){
+    inputArray.length=0;
+    operatorArray.length=0;
+    x=0;
+    y=0;
+    z=0;
+    answer=0;
+    temp=0;
+    document.querySelector('.answer').innerText='';
+    inputField.innerText='';
 });
 
